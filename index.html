@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Café del Sur · Menú</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --fondo: #f1f5f0;
+    --tinta: #1f2a24;
+    --verde: #2f5d50;
+    --linea: #b9c8bf;
+    --suave: #5d6b63;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--fondo);
+    color: var(--tinta);
+    font-family: "Instrument Sans", system-ui, sans-serif;
+    line-height: 1.5;
+  }
+  main { max-width: 34rem; margin: 0 auto; padding: 2.5rem 1.25rem 4rem; }
+  h1 {
+    font-family: "Young Serif", Georgia, serif;
+    font-weight: 400;
+    font-size: 2.6rem;
+    line-height: 1.05;
+    margin: 0 0 .4rem;
+    color: var(--verde);
+  }
+  .bajada { margin: 0 0 2.5rem; color: var(--suave); }
+  h2 {
+    font-family: "Young Serif", Georgia, serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin: 2.5rem 0 .75rem;
+    padding-bottom: .4rem;
+    border-bottom: 2px solid var(--verde);
+  }
+  ul { list-style: none; margin: 0; padding: 0; }
+  li { padding: .6rem 0; }
+  .fila { display: flex; align-items: baseline; gap: .5rem; }
+  .nombre { font-weight: 600; }
+  /* los puntitos entre el nombre y el precio, como en un menú impreso */
+  .puntos { flex: 1; border-bottom: 2px dotted var(--linea); transform: translateY(-.25rem); }
+  .precio { font-weight: 600; font-variant-numeric: tabular-nums; }
+  .detalle { margin: .1rem 0 0; font-size: .92rem; color: var(--suave); max-width: 26rem; }
+  footer { margin-top: 3rem; font-size: .9rem; color: var(--suave); }
+  a { color: var(--verde); }
+  a:focus-visible { outline: 3px solid var(--verde); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main>
+
+  <!-- ====== DATOS DEL LOCAL: cambiá solo el texto, no las etiquetas ====== -->
+  <h1>Café del Sur</h1>
+  <p class="bajada">Lunes a sábado, de 8 a 20 h. Precios actualizados al 22/10/2026.</p>
+
+  <!-- ====== CATEGORÍA: copiá y pegá un bloque <h2> + <ul> para agregar otra ====== -->
+  <h2>Cafés</h2>
+  <ul>
+    <li>
+      <div class="fila"><span class="nombre">Espresso</span><span class="puntos"></span><span class="precio">$2.500</span></div>
+    </li>
+    <li>
+      <div class="fila"><span class="nombre">Cortado</span><span class="puntos"></span><span class="precio">$2.800</span></div>
+    </li>
+    <li>
+      <div class="fila"><span class="nombre">Latte</span><span class="puntos"></span><span class="precio">$3.600</span></div>
+      <p class="detalle">Con leche entera o deslactosada.</p>
+    </li>
+  </ul>
+
+  <h2>Para comer</h2>
+  <ul>
+    <li>
+      <div class="fila"><span class="nombre">Tostado de jamón y queso</span><span class="puntos"></span><span class="precio">$5.900</span></div>
+    </li>
+    <li>
+      <div class="fila"><span class="nombre">Medialuna</span><span class="puntos"></span><span class="precio">$1.200</span></div>
+    </li>
+    <li>
+      <div class="fila"><span class="nombre">Porción de torta del día</span><span class="puntos"></span><span class="precio">$4.800</span></div>
+      <p class="detalle">Preguntá cuál hay hoy.</p>
+    </li>
+  </ul>
+
+  <footer>
+    Pedí en la barra o escribinos por WhatsApp: <a href="https://wa.me/5492966000000">+54 9 2966 00-0000</a>
+  </footer>
+
+</main>
+</body>
+</html>
